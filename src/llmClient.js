@@ -8,7 +8,11 @@ async function callLLM(prompt) {
     console.log('Calling Ollama (streaming)...');
     
     const stream = await client.chat({
+<<<<<<< HEAD
       model: 'deepseek-coder:latest',
+=======
+      model: 'deepseek-coder:6.7b',
+>>>>>>> 1101fd21f9a262fe66add603ad2900b74e9040fd
       messages: [
         { role: 'system', content: 'You are a senior TypeScript and Playwright test engineer.' },
         { role: 'user', content: prompt }
