@@ -3,16 +3,19 @@
   "compilerOptions": {
     "importHelpers": true,
     "rootDir": "src",
-    "module": "commonjs",
+    "module": "node16",
     "outDir": "dist",
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
     "esModuleInterop": true,
-    "strict": true,
+    "strict": false,
     "types": ["node"],
     "experimentalDecorators": true,
     "target": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types"
     ],
